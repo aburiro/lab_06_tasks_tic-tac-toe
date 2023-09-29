@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS DOM paragraph style</title>
+    <script>
+        function js_style() {
+            // Get the paragraph element by its ID
+            var paragraph = document.getElementById("text");
+
+            // Modify the style properties
+            paragraph.style.fontSize = "24px"; // Change the font size
+            paragraph.style.fontFamily = "Arial, sans-serif"; // Change the font family
+            paragraph.style.color = "blue"; // Change the text color
+        }
+    </script>
+</head>
+<body>
+<p id="text">JavaScript Exercises - w3resource</p>
+<div>
+    <button id="jsstyle" onclick="js_style()">Style</button>
+</div>
+</body>
+</html>

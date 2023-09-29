@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_06_02</title>
+    <script>
+        function getAttributes(){
+            var link = document.getElementById("w3r");
+            var href, hreflang, rel, target, type;
+            href = link.getAttribute("href");
+            hreflang = link.getAttribute("hreflang");
+            rel = link.getAttribute("rel");
+            target = link.getAttribute("target");
+            type = link.getAttribute("type");
+
+            alert("href = " + href + "\nhreflang = " + hreflang + "\nrel = " + rel + "\ntarget = " + target + "\ntype = " + type);
+        }
+    </script>
+</head>
+<body>
+<p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self"
+      href="http://www.w3resource.com/">w3resource</a></p>
+<button onclick="getAttributes()">Click here to get attributes value</button>
+</body>
+</html>
